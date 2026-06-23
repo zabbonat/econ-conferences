@@ -45,7 +45,10 @@ function App() {
   const availableYears = useMemo(() => {
     const years = new Set();
     conferencesData.forEach(conf => {
-      years.add(new Date(conf.eventDateStart).getFullYear().toString());
+      const year = new Date(conf.eventDateStart).getFullYear();
+      if (year >= 2026) {
+        years.add(year.toString());
+      }
     });
     return ['All', ...Array.from(years).sort()];
   }, []);
