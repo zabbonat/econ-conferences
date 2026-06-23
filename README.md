@@ -1,63 +1,63 @@
 # Economics Conferences & Summer Schools Tracker
 
-Un'applicazione web interattiva per scoprire, filtrare e visualizzare su mappa le migliori conferenze, workshop e summer school di economia a livello globale.
+An interactive web application to discover, filter, and view the best economics conferences, workshops, and summer schools globally on a map.
 
-## Caratteristiche Principali
-- **Mappa Interattiva (Leaflet):** Visualizzazione geografica degli eventi con popup leggibili contenenti link diretti al sito web di ciascuna conferenza.
-- **Filtri di Ricerca:** Filtra gli eventi per tipologia (Conferenze, Workshop, Summer School), stato della scadenza (Open, Urgent) e ricerca testuale libera.
-- **Statistiche in Tempo Reale:** Barra delle statistiche interattiva e cliccabile per filtrare rapidamente gli eventi in base ai conteggi.
-- **Aggiornamento Automatico:** Script e workflow GitHub Actions configurati per mantenere i dati aggiornati nel tempo.
+## Key Features
+- **Interactive Map (Leaflet):** Geographical visualization of events with clean popups containing direct links to each conference website.
+- **Search & Filters:** Filter events by type (Conferences, Workshops, Summer Schools), deadline urgency (Open, Urgent), and free-text search.
+- **Interactive Stats Bar:** Clickable metrics at the top to filter events quickly based on counts.
+- **Automatic Weekly Updates:** Pre-configured script and GitHub Actions workflow to keep the conference data up-to-date.
 
 ---
 
-## Eseguire Localmente
+## Running Locally
 
-### Prerequisiti
-Assicurati di aver installato [Node.js](https://nodejs.org/).
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed.
 
-### Installazione
-1. Clona la repository:
+### Installation
+1. Clone the repository:
    ```bash
-   git clone <url-del-tuo-repo>
+   git clone https://github.com/zabbonat/econ-conferences.git
    cd econ-conferences
    ```
-2. Installa le dipendenze:
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-### Avvio in Sviluppo
-Avvia il server di sviluppo locale:
+### Start Development Server
+Start the local development server:
 ```bash
 npm run dev
 ```
-Apri [http://localhost:5173](http://localhost:5173) nel browser per visualizzare il sito.
+Open [http://localhost:5173](http://localhost:5173) in your browser to view the site.
 
 ---
 
-## Aggiornamento Automatico dei Dati
+## Automatic Data Updates
 
-Il progetto include un sistema di aggiornamento automatico dei dati che controlla le scadenze passate ed estrae i dettagli delle nuove edizioni.
+The project includes an automated update system that checks for past events and retrieves details for their next editions.
 
-### Come Funziona
-Il file [.github/workflows/update-conferences.yml](.github/workflows/update-conferences.yml) esegue uno script una volta alla settimana (ogni domenica a mezzanotte):
-1. **Fallback (Senza configurazione extra):** Se la data di fine di un evento è passata, lo script sposta automaticamente l'evento all'anno successivo incrementando le date di 1 anno per mantenerlo visibile.
-2. **Aggiornamento Intelligente con AI (Consigliato):** Se configuri una chiave API di Gemini, lo script effettuerà una ricerca web in tempo reale (Google Search Grounding) per trovare le date effettive, le posizioni e le scadenze corrette della nuova edizione.
+### How it Works
+The [.github/workflows/update-conferences.yml](.github/workflows/update-conferences.yml) file runs a Node.js script automatically every Sunday at midnight (UTC):
+1. **Fallback (Zero setup):** If an event's end date has passed, the script automatically shifts it to the next year (adding 1 year to all dates) to keep the event listed and visible.
+2. **AI-Powered Live Updates (Recommended):** If you configure a Gemini API key, the script will perform real-time web searches (via Google Search Grounding) to find the actual dates, deadlines, locations, and website URLs of the new edition.
 
-### Configurazione di Gemini (Opzionale)
-Per attivare l'aggiornamento intelligente con AI:
-1. Ottieni una chiave API gratuita da [Google AI Studio](https://aistudio.google.com/).
-2. Vai nelle impostazioni del tuo repository GitHub: `Settings` > `Secrets and variables` > `Actions`.
-3. Crea un nuovo **Repository Secret** chiamato `GEMINI_API_KEY` e inserisci la tua chiave API come valore.
+### Setup Gemini API Key (Optional)
+To enable the AI-powered automatic updates:
+1. Get a free API key from [Google AI Studio](https://aistudio.google.com/).
+2. Go to your GitHub repository settings: `Settings` > `Secrets and variables` > `Actions`.
+3. Create a **New repository secret** named `GEMINI_API_KEY` and paste your key.
 
-### Esecuzione Manuale
-Puoi forzare il controllo degli aggiornamenti in qualsiasi momento:
-- **Su GitHub:** Vai alla scheda `Actions` del repository, seleziona `Weekly Conference Update` e clicca su `Run workflow`.
-- **In Locale:** Esegui il comando (assicurandoti di definire la chiave API se desideri l'AI):
+### Run Updates Manually
+You can trigger the update check at any time:
+- **On GitHub:** Go to the `Actions` tab of your repository, select `Weekly Conference Update`, and click `Run workflow`.
+- **Locally:** Run the script (make sure to set the environment variable if you want to use the AI capability):
   ```bash
-  # In Windows PowerShell:
-  $env:GEMINI_API_KEY="la_tua_chiave_qui"; node scripts/auto-update.js
+  # Windows PowerShell:
+  $env:GEMINI_API_KEY="your_api_key_here"; node scripts/auto-update.js
   
-  # In Bash (Mac/Linux):
-  GEMINI_API_KEY="la_tua_chiave_qui" node scripts/auto-update.js
+  # Bash (Mac/Linux):
+  GEMINI_API_KEY="your_api_key_here" node scripts/auto-update.js
   ```
