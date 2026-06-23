@@ -1,0 +1,1313 @@
+[
+  {
+    "id": "1",
+    "name": "DRUID Conference 2026",
+    "type": "Conference",
+    "location": "Copenhagen, Denmark",
+    "coordinates": [
+      55.6761,
+      12.5683
+    ],
+    "eventDateStart": "2026-06-09",
+    "eventDateEnd": "2026-06-11",
+    "deadline": "2026-03-01",
+    "description": "Innovation, entrepreneurship",
+    "website": "https://druid.dk",
+    "topics": [
+      "Innovation",
+      "Entrepreneurship"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "DRUID Academy 2026",
+    "type": "Workshop",
+    "location": "Aalborg, Denmark",
+    "coordinates": [
+      57.0488,
+      9.9217
+    ],
+    "eventDateStart": "2026-01-20",
+    "eventDateEnd": "2026-01-22",
+    "deadline": "2025-10-15",
+    "description": "PhD / innovation studies",
+    "website": "https://conference.druid.dk",
+    "topics": [
+      "PhD",
+      "Innovation"
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Brussels Economic Forum",
+    "type": "Conference",
+    "location": "Brussels, Belgium",
+    "coordinates": [
+      50.8503,
+      4.3517
+    ],
+    "eventDateStart": "2026-05-15",
+    "eventDateEnd": "2026-05-15",
+    "deadline": "2026-01-31",
+    "description": "Macroeconomics / policy",
+    "website": "https://economy-finance.ec.europa.eu/events_en",
+    "topics": [
+      "Macroeconomics",
+      "Policy"
+    ]
+  },
+  {
+    "id": "4",
+    "name": "European Economic Policy Forum",
+    "type": "Conference",
+    "location": "Milan, Italy",
+    "coordinates": [
+      45.4642,
+      9.19
+    ],
+    "eventDateStart": "2026-11-10",
+    "eventDateEnd": "2026-11-11",
+    "deadline": "2026-08-01",
+    "description": "Policy economics",
+    "website": "https://www2.deloitte.com/it/it.html",
+    "topics": [
+      "Policy"
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Renaissance in Economics (A.I.S.Re)",
+    "type": "Conference",
+    "location": "Rome, Italy",
+    "coordinates": [
+      41.9028,
+      12.4964
+    ],
+    "eventDateStart": "2026-09-02",
+    "eventDateEnd": "2026-09-04",
+    "deadline": "2026-04-15",
+    "description": "Economia eterodossa / innovazione",
+    "website": "https://www.aisre.it",
+    "topics": [
+      "Heterodox",
+      "Innovation"
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Banca d'Italia Innovation and Finance",
+    "type": "Conference",
+    "location": "Rome, Italy",
+    "coordinates": [
+      41.8986,
+      12.4939
+    ],
+    "eventDateStart": "2026-10-15",
+    "eventDateEnd": "2026-10-16",
+    "deadline": "2026-06-30",
+    "description": "Innovazione, finance",
+    "website": "https://www.bancaditalia.it",
+    "topics": [
+      "Innovation",
+      "Finance"
+    ]
+  },
+  {
+    "id": "7",
+    "name": "IFEC 2026",
+    "type": "Conference",
+    "location": "Paris, France",
+    "coordinates": [
+      48.8566,
+      2.3522
+    ],
+    "eventDateStart": "2026-07-10",
+    "eventDateEnd": "2026-07-12",
+    "deadline": "2026-03-20",
+    "description": "Innovazione, sustainable finance",
+    "website": "#",
+    "topics": [
+      "Innovation",
+      "Sustainable Finance"
+    ]
+  },
+  {
+    "id": "8",
+    "name": "AEA / ASSA Annual Meeting",
+    "type": "Conference",
+    "location": "Philadelphia, PA, USA",
+    "coordinates": [
+      39.9526,
+      -75.1652
+    ],
+    "eventDateStart": "2026-01-03",
+    "eventDateEnd": "2026-01-05",
+    "deadline": "2025-04-01",
+    "description": "Economia generale",
+    "website": "https://www.aeaweb.org",
+    "topics": [
+      "General Economics"
+    ]
+  },
+  {
+    "id": "9",
+    "name": "NBER Summer Institute",
+    "type": "Workshop",
+    "location": "Cambridge, MA, USA",
+    "coordinates": [
+      42.3736,
+      -71.1097
+    ],
+    "eventDateStart": "2026-07-06",
+    "eventDateEnd": "2026-07-24",
+    "deadline": "2026-03-15",
+    "description": "Economia applicata / macro / growth",
+    "website": "https://www.nber.org",
+    "topics": [
+      "Applied",
+      "Macro",
+      "Growth"
+    ]
+  },
+  {
+    "id": "10",
+    "name": "RES 2026 Annual Conference",
+    "type": "Conference",
+    "location": "Bristol, UK",
+    "coordinates": [
+      51.4545,
+      -2.5879
+    ],
+    "eventDateStart": "2026-04-14",
+    "eventDateEnd": "2026-04-16",
+    "deadline": "2025-10-31",
+    "description": "General economics",
+    "website": "https://res.org.uk",
+    "topics": [
+      "General Economics"
+    ]
+  },
+  {
+    "id": "11",
+    "name": "EEA-ESEM 2026",
+    "type": "Conference",
+    "location": "Barcelona, Spain",
+    "coordinates": [
+      41.3851,
+      2.1734
+    ],
+    "eventDateStart": "2026-08-24",
+    "eventDateEnd": "2026-08-28",
+    "deadline": "2026-02-15",
+    "description": "Econometrics / micro / macro",
+    "website": "https://www.eeassoc.org",
+    "topics": [
+      "Econometrics",
+      "Micro",
+      "Macro"
+    ]
+  },
+  {
+    "id": "12",
+    "name": "EALE Conference 2026",
+    "type": "Conference",
+    "location": "Berlin, Germany",
+    "coordinates": [
+      52.52,
+      13.405
+    ],
+    "eventDateStart": "2026-09-17",
+    "eventDateEnd": "2026-09-19",
+    "deadline": "2026-03-31",
+    "description": "Labor economics",
+    "website": "https://www.eale.nl",
+    "topics": [
+      "Labor"
+    ]
+  },
+  {
+    "id": "13",
+    "name": "Verein für Socialpolitik Annual Conference 2026",
+    "type": "Conference",
+    "location": "Vienna, Austria",
+    "coordinates": [
+      48.2082,
+      16.3738
+    ],
+    "eventDateStart": "2026-09-13",
+    "eventDateEnd": "2026-09-16",
+    "deadline": "2026-03-01",
+    "description": "General economics",
+    "website": "https://www.socialpolitik.de",
+    "topics": [
+      "General Economics"
+    ]
+  },
+  {
+    "id": "14",
+    "name": "Italian Economic Association Annual Conference",
+    "type": "Conference",
+    "location": "Naples, Italy",
+    "coordinates": [
+      40.8518,
+      14.2681
+    ],
+    "eventDateStart": "2026-10-22",
+    "eventDateEnd": "2026-10-24",
+    "deadline": "2026-05-31",
+    "description": "General economics",
+    "website": "https://www.siecon.org",
+    "topics": [
+      "General Economics"
+    ]
+  },
+  {
+    "id": "15",
+    "name": "2026 Advances with Field Experiments (AFE)",
+    "type": "Conference",
+    "location": "Chicago, IL, USA",
+    "coordinates": [
+      41.8781,
+      -87.6298
+    ],
+    "eventDateStart": "2026-09-24",
+    "eventDateEnd": "2026-09-25",
+    "deadline": "2026-05-15",
+    "description": "Experimental / field econ",
+    "website": "#",
+    "topics": [
+      "Experimental",
+      "Field"
+    ]
+  },
+  {
+    "id": "16",
+    "name": "Economics of Mental Health Workshop 2026",
+    "type": "Workshop",
+    "location": "York, UK",
+    "coordinates": [
+      53.959,
+      -1.0815
+    ],
+    "eventDateStart": "2026-06-20",
+    "eventDateEnd": "2026-06-21",
+    "deadline": "2026-02-10",
+    "description": "Health economics",
+    "website": "#",
+    "topics": [
+      "Health Economics"
+    ]
+  },
+  {
+    "id": "17",
+    "name": "Gender Gaps Conference 2026",
+    "type": "Conference",
+    "location": "Stockholm, Sweden",
+    "coordinates": [
+      59.3293,
+      18.0686
+    ],
+    "eventDateStart": "2026-05-28",
+    "eventDateEnd": "2026-05-29",
+    "deadline": "2026-01-15",
+    "description": "Gender economics",
+    "website": "#",
+    "topics": [
+      "Gender"
+    ]
+  },
+  {
+    "id": "18",
+    "name": "AEDE Conference",
+    "type": "Invited keynote speaker",
+    "location": "Porto, Portugal",
+    "coordinates": [
+      41.1579,
+      -8.6291
+    ],
+    "eventDateStart": "2022-06-15",
+    "eventDateEnd": "2022-06-16",
+    "deadline": "2022-03-01",
+    "description": "Invited keynote speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "19",
+    "name": "ISSI Conference",
+    "type": "Invited plenary speaker",
+    "location": "Online",
+    "coordinates": [
+      0,
+      0
+    ],
+    "eventDateStart": "2021-06-15",
+    "eventDateEnd": "2021-06-16",
+    "deadline": "2021-03-01",
+    "description": "Invited plenary speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "20",
+    "name": "Advanced Methods in Departmental Evaluation",
+    "type": "Invited speaker",
+    "location": "Online",
+    "coordinates": [
+      0,
+      0
+    ],
+    "eventDateStart": "2021-06-15",
+    "eventDateEnd": "2021-06-16",
+    "deadline": "2021-03-01",
+    "description": "Invited speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "21",
+    "name": "Models in quantitative science and technology studies",
+    "type": "Invited speaker",
+    "location": "Online",
+    "coordinates": [
+      0,
+      0
+    ],
+    "eventDateStart": "2021-06-15",
+    "eventDateEnd": "2021-06-16",
+    "deadline": "2021-03-01",
+    "description": "Invited speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "22",
+    "name": "CDKD2021",
+    "type": "Invited speaker",
+    "location": "Online",
+    "coordinates": [
+      0,
+      0
+    ],
+    "eventDateStart": "2021-06-15",
+    "eventDateEnd": "2021-06-16",
+    "deadline": "2021-03-01",
+    "description": "Invited speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "23",
+    "name": "LTC2021 E-Science and Digital Libraries",
+    "type": "Keynote speaker",
+    "location": "Online",
+    "coordinates": [
+      0,
+      0
+    ],
+    "eventDateStart": "2021-06-15",
+    "eventDateEnd": "2021-06-16",
+    "deadline": "2021-03-01",
+    "description": "Keynote speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "24",
+    "name": "Workshop ShareScience",
+    "type": "Invited speaker",
+    "location": "Rome, Italy",
+    "coordinates": [
+      41.9028,
+      12.4964
+    ],
+    "eventDateStart": "2019-06-15",
+    "eventDateEnd": "2019-06-16",
+    "deadline": "2019-03-01",
+    "description": "Invited speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "25",
+    "name": "Fields of Research classification workshop",
+    "type": "Invited speaker",
+    "location": "Berlin, Germany",
+    "coordinates": [
+      52.52,
+      13.405
+    ],
+    "eventDateStart": "2019-06-15",
+    "eventDateEnd": "2019-06-16",
+    "deadline": "2019-03-01",
+    "description": "Invited speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "26",
+    "name": "NAPW",
+    "type": "Invited plenary speaker",
+    "location": "Miami, FL, USA",
+    "coordinates": [
+      25.7617,
+      -80.1918
+    ],
+    "eventDateStart": "2018-06-15",
+    "eventDateEnd": "2018-06-16",
+    "deadline": "2018-03-01",
+    "description": "Invited plenary speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "27",
+    "name": "OECD workshop on Semantic Analysis for Innovation Policy",
+    "type": "Invited speaker",
+    "location": "Paris, France",
+    "coordinates": [
+      48.8566,
+      2.3522
+    ],
+    "eventDateStart": "2018-06-15",
+    "eventDateEnd": "2018-06-16",
+    "deadline": "2018-03-01",
+    "description": "Invited speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "28",
+    "name": "CMStatistics 2017",
+    "type": "Invited presentation",
+    "location": "London, UK",
+    "coordinates": [
+      51.5074,
+      -0.1278
+    ],
+    "eventDateStart": "2017-06-15",
+    "eventDateEnd": "2017-06-16",
+    "deadline": "2017-03-01",
+    "description": "Invited presentation",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "29",
+    "name": "European Commission training workshop",
+    "type": "Invited speaker",
+    "location": "Brussels, Belgium",
+    "coordinates": [
+      50.8503,
+      4.3517
+    ],
+    "eventDateStart": "2017-06-15",
+    "eventDateEnd": "2017-06-16",
+    "deadline": "2017-03-01",
+    "description": "Invited speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "30",
+    "name": "EPFL Web of Science data workshop",
+    "type": "Invited speaker",
+    "location": "Lausanne, Switzerland",
+    "coordinates": [
+      46.5197,
+      6.6323
+    ],
+    "eventDateStart": "2017-06-15",
+    "eventDateEnd": "2017-06-16",
+    "deadline": "2017-03-01",
+    "description": "Invited speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "31",
+    "name": "EC-OECD workshop on Semantic Technologies",
+    "type": "Invited speaker",
+    "location": "Brussels, Belgium",
+    "coordinates": [
+      50.8503,
+      4.3517
+    ],
+    "eventDateStart": "2017-06-15",
+    "eventDateEnd": "2017-06-16",
+    "deadline": "2017-03-01",
+    "description": "Invited speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "32",
+    "name": "CMStatistics 2016",
+    "type": "Invited presentation",
+    "location": "Seville, Spain",
+    "coordinates": [
+      37.3891,
+      -5.9845
+    ],
+    "eventDateStart": "2016-06-15",
+    "eventDateEnd": "2016-06-16",
+    "deadline": "2016-03-01",
+    "description": "Invited presentation",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "33",
+    "name": "Data-driven Discovery conference",
+    "type": "Invited speaker",
+    "location": "Beijing, China",
+    "coordinates": [
+      39.9042,
+      116.4074
+    ],
+    "eventDateStart": "2016-06-15",
+    "eventDateEnd": "2016-06-16",
+    "deadline": "2016-03-01",
+    "description": "Invited speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "34",
+    "name": "CMStatistics 2015",
+    "type": "Invited presentation",
+    "location": "London, UK",
+    "coordinates": [
+      51.5074,
+      -0.1278
+    ],
+    "eventDateStart": "2015-06-15",
+    "eventDateEnd": "2015-06-16",
+    "deadline": "2015-03-01",
+    "description": "Invited presentation",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "35",
+    "name": "Leuven LEER Workshop",
+    "type": "Keynote speaker",
+    "location": "Leuven, Belgium",
+    "coordinates": [
+      50.8798,
+      4.7005
+    ],
+    "eventDateStart": "2015-06-15",
+    "eventDateEnd": "2015-06-16",
+    "deadline": "2015-03-01",
+    "description": "Keynote speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "36",
+    "name": "Workshop on Knowledge, Diversity and Performance",
+    "type": "Invited speaker",
+    "location": "Rome, Italy",
+    "coordinates": [
+      41.9028,
+      12.4964
+    ],
+    "eventDateStart": "2014-06-15",
+    "eventDateEnd": "2014-06-16",
+    "deadline": "2014-03-01",
+    "description": "Invited speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "37",
+    "name": "First EBRP Workshop",
+    "type": "Invited speaker",
+    "location": "Amsterdam, Netherlands",
+    "coordinates": [
+      52.3676,
+      4.9041
+    ],
+    "eventDateStart": "2013-06-15",
+    "eventDateEnd": "2013-06-16",
+    "deadline": "2013-03-01",
+    "description": "Invited speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "38",
+    "name": "Workshop ASE Nonparametric Frontier Analysis",
+    "type": "Keynote speaker",
+    "location": "Bucharest, Romania",
+    "coordinates": [
+      44.4268,
+      26.1025
+    ],
+    "eventDateStart": "2013-06-15",
+    "eventDateEnd": "2013-06-16",
+    "deadline": "2013-03-01",
+    "description": "Keynote speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "39",
+    "name": "ERA Conference",
+    "type": "Invited speaker",
+    "location": "Nicosia, Cyprus",
+    "coordinates": [
+      35.1856,
+      33.3823
+    ],
+    "eventDateStart": "2012-06-15",
+    "eventDateEnd": "2012-06-16",
+    "deadline": "2012-03-01",
+    "description": "Invited speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "40",
+    "name": "JRC workshop Indicators for the Innovation Union",
+    "type": "Invited expert",
+    "location": "Ispra, Italy",
+    "coordinates": [
+      45.8155,
+      8.6083
+    ],
+    "eventDateStart": "2012-06-15",
+    "eventDateEnd": "2012-06-16",
+    "deadline": "2012-03-01",
+    "description": "Invited expert",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "41",
+    "name": "X Convegno nazionale INBB",
+    "type": "Invited speaker",
+    "location": "Rome, Italy",
+    "coordinates": [
+      41.9028,
+      12.4964
+    ],
+    "eventDateStart": "2012-06-15",
+    "eventDateEnd": "2012-06-16",
+    "deadline": "2012-03-01",
+    "description": "Invited speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "42",
+    "name": "X Workshop SIEPI",
+    "type": "Keynote speaker",
+    "location": "Perugia, Italy",
+    "coordinates": [
+      43.1107,
+      12.3908
+    ],
+    "eventDateStart": "2012-06-15",
+    "eventDateEnd": "2012-06-16",
+    "deadline": "2012-03-01",
+    "description": "Keynote speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "43",
+    "name": "Convegno La ricerca universitaria e la sua valutazione",
+    "type": "Invited speaker",
+    "location": "Milan, Italy",
+    "coordinates": [
+      45.4642,
+      9.19
+    ],
+    "eventDateStart": "2011-06-15",
+    "eventDateEnd": "2011-06-16",
+    "deadline": "2011-03-01",
+    "description": "Invited speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "44",
+    "name": "ESOF2010 workshop",
+    "type": "Invited speaker",
+    "location": "Turin, Italy",
+    "coordinates": [
+      45.0703,
+      7.6869
+    ],
+    "eventDateStart": "2010-06-15",
+    "eventDateEnd": "2010-06-16",
+    "deadline": "2010-03-01",
+    "description": "Invited speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "45",
+    "name": "Workshop in honor of Léopold Simar",
+    "type": "Invited speaker",
+    "location": "Louvain-la-Neuve, Belgium",
+    "coordinates": [
+      50.6681,
+      4.6118
+    ],
+    "eventDateStart": "2009-06-15",
+    "eventDateEnd": "2009-06-16",
+    "deadline": "2009-03-01",
+    "description": "Invited speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "46",
+    "name": "Convegno ANPRI",
+    "type": "Invited speaker",
+    "location": "Rome, Italy",
+    "coordinates": [
+      41.9028,
+      12.4964
+    ],
+    "eventDateStart": "2008-06-15",
+    "eventDateEnd": "2008-06-16",
+    "deadline": "2008-03-01",
+    "description": "Invited speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "47",
+    "name": "INGENIO workshop",
+    "type": "Invited speaker",
+    "location": "Valencia, Spain",
+    "coordinates": [
+      39.4699,
+      -0.3763
+    ],
+    "eventDateStart": "2008-06-15",
+    "eventDateEnd": "2008-06-16",
+    "deadline": "2008-03-01",
+    "description": "Invited speaker",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "48",
+    "name": "XXI Congress of the Italian Society of Microsurgery",
+    "type": "Chair of symposium",
+    "location": "Turin, Italy",
+    "coordinates": [
+      45.0703,
+      7.6869
+    ],
+    "eventDateStart": "2005-06-15",
+    "eventDateEnd": "2005-06-16",
+    "deadline": "2005-03-01",
+    "description": "Chair of symposium",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "49",
+    "name": "Forum 2004 of the European Neurosciences Societies",
+    "type": "Organizing committee",
+    "location": "Lisbon, Portugal",
+    "coordinates": [
+      38.7223,
+      -9.1393
+    ],
+    "eventDateStart": "2004-06-15",
+    "eventDateEnd": "2004-06-16",
+    "deadline": "2004-03-01",
+    "description": "Organizing committee",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "50",
+    "name": "International Symposium on Peripheral Nerve Regeneration",
+    "type": "Organizing committee",
+    "location": "Turin, Italy",
+    "coordinates": [
+      45.0703,
+      7.6869
+    ],
+    "eventDateStart": "2010-06-15",
+    "eventDateEnd": "2010-06-16",
+    "deadline": "2010-03-01",
+    "description": "Organizing committee",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "51",
+    "name": "International Symposium on Peripheral Nerve Regeneration",
+    "type": "Organizing committee",
+    "location": "Turin, Italy",
+    "coordinates": [
+      45.0703,
+      7.6869
+    ],
+    "eventDateStart": "2014-06-15",
+    "eventDateEnd": "2014-06-16",
+    "deadline": "2014-03-01",
+    "description": "Organizing committee",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "52",
+    "name": "International Symposium on Peripheral Nerve Regeneration",
+    "type": "Organizing committee",
+    "location": "Hannover, Germany",
+    "coordinates": [
+      52.3759,
+      9.732
+    ],
+    "eventDateStart": "2015-06-15",
+    "eventDateEnd": "2015-06-16",
+    "deadline": "2015-03-01",
+    "description": "Organizing committee",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "53",
+    "name": "International Symposium on Peripheral Nerve Regeneration",
+    "type": "Organizing committee",
+    "location": "Barcelona, Spain",
+    "coordinates": [
+      41.3851,
+      2.1734
+    ],
+    "eventDateStart": "2017-06-15",
+    "eventDateEnd": "2017-06-16",
+    "deadline": "2017-03-01",
+    "description": "Organizing committee",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "54",
+    "name": "International Conference in Cultural Economics",
+    "type": "Conference presentation",
+    "location": "Copenhagen, Denmark",
+    "coordinates": [
+      55.6761,
+      12.5683
+    ],
+    "eventDateStart": "2010-06-15",
+    "eventDateEnd": "2010-06-16",
+    "deadline": "2010-03-01",
+    "description": "Conference presentation",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "55",
+    "name": "DIME Conference Organizing for Networked Innovation",
+    "type": "Conference",
+    "location": "Stresa, Italy",
+    "coordinates": [
+      45.8833,
+      8.5333
+    ],
+    "eventDateStart": "2010-06-15",
+    "eventDateEnd": "2010-06-16",
+    "deadline": "2010-03-01",
+    "description": "Conference",
+    "website": "#",
+    "topics": [
+      "Past Event"
+    ]
+  },
+  {
+    "id": "57",
+    "name": "RND Management Conference 2026",
+    "type": "Conference",
+    "location": "Manchester, UK",
+    "coordinates": [
+      53.4808,
+      -2.2426
+    ],
+    "eventDateStart": "2026-06-22",
+    "eventDateEnd": "2026-06-24",
+    "deadline": "2026-01-15",
+    "description": "R&D Management Conference",
+    "website": "https://rnd2026.org",
+    "topics": [
+      "R&D",
+      "Management"
+    ]
+  },
+  {
+    "id": "58",
+    "name": "RND Management Conference 2027",
+    "type": "Conference",
+    "location": "TBD",
+    "coordinates": [
+      45,
+      10
+    ],
+    "eventDateStart": "2027-06-15",
+    "eventDateEnd": "2027-06-17",
+    "deadline": "2027-01-15",
+    "description": "R&D Management Conference",
+    "website": "https://www.rnd-conferences.org/",
+    "topics": [
+      "R&D",
+      "Management"
+    ]
+  },
+  {
+    "id": "59",
+    "name": "EPIP Conference 2026",
+    "type": "Conference",
+    "location": "TBD",
+    "coordinates": [
+      48.8566,
+      2.3522
+    ],
+    "eventDateStart": "2026-09-09",
+    "eventDateEnd": "2026-09-11",
+    "deadline": "2026-04-15",
+    "description": "European Policy for Intellectual Property",
+    "website": "https://epip.eu",
+    "topics": [
+      "Intellectual Property",
+      "Innovation"
+    ]
+  },
+  {
+    "id": "60",
+    "name": "EPIP Conference 2027",
+    "type": "Conference",
+    "location": "TBD",
+    "coordinates": [
+      48.8566,
+      2.3522
+    ],
+    "eventDateStart": "2027-09-08",
+    "eventDateEnd": "2027-09-10",
+    "deadline": "2027-04-15",
+    "description": "European Policy for Intellectual Property",
+    "website": "https://epip.eu",
+    "topics": [
+      "Intellectual Property",
+      "Innovation"
+    ]
+  },
+  {
+    "id": "61",
+    "name": "BSE Summer School 2026",
+    "type": "Summer School",
+    "location": "Barcelona, Spain",
+    "coordinates": [
+      41.3851,
+      2.1734
+    ],
+    "eventDateStart": "2026-06-22",
+    "eventDateEnd": "2026-07-10",
+    "deadline": "2026-05-01",
+    "description": "Barcelona School of Economics Summer School",
+    "website": "https://bse.eu/summer-school",
+    "topics": [
+      "Macroeconomics",
+      "Microeconomics",
+      "Data Science"
+    ]
+  },
+  {
+    "id": "62",
+    "name": "LSE Summer School in Economics 2026",
+    "type": "Summer School",
+    "location": "London, UK",
+    "coordinates": [
+      51.5144,
+      -0.1166
+    ],
+    "eventDateStart": "2026-07-20",
+    "eventDateEnd": "2026-08-07",
+    "deadline": "2026-04-30",
+    "description": "London School of Economics Summer School",
+    "website": "https://www.lse.ac.uk/study-at-lse/summer-schools",
+    "topics": [
+      "General Economics",
+      "Finance"
+    ]
+  },
+  {
+    "id": "63",
+    "name": "NBER Summer Institute 2026",
+    "type": "Summer School",
+    "location": "Cambridge, MA, USA",
+    "coordinates": [
+      42.3736,
+      -71.1097
+    ],
+    "eventDateStart": "2026-07-06",
+    "eventDateEnd": "2026-07-24",
+    "deadline": "2026-03-15",
+    "description": "National Bureau of Economic Research",
+    "website": "https://www.nber.org/",
+    "topics": [
+      "Applied",
+      "Macro",
+      "Growth"
+    ]
+  },
+  {
+    "id": "64",
+    "name": "KIDS Summer School 2026",
+    "type": "Summer School",
+    "location": "Nice, France",
+    "coordinates": [
+      43.7102,
+      7.262
+    ],
+    "eventDateStart": "2026-07-15",
+    "eventDateEnd": "2026-07-19",
+    "deadline": "2026-04-15",
+    "description": "Knowledge, Innovation, and Digitalization Summer School",
+    "website": "#",
+    "topics": [
+      "Knowledge",
+      "Innovation",
+      "Digitalization"
+    ]
+  },
+  {
+    "id": "65",
+    "name": "ECOINN Summer School 2026",
+    "type": "Summer School",
+    "location": "Pisa, Italy",
+    "coordinates": [
+      43.7228,
+      10.4017
+    ],
+    "eventDateStart": "2026-06-22",
+    "eventDateEnd": "2026-06-26",
+    "deadline": "2026-04-26",
+    "description": "Economics of Innovation and Technological Change (Scuola Superiore Sant'Anna)",
+    "website": "https://www.santannapisa.it/it/ecoinn-economics-innovation-and-technological-change",
+    "topics": [
+      "Innovation",
+      "Technological Change"
+    ]
+  },
+  {
+    "id": "66",
+    "name": "Competition and Innovation Summer School (CISS) 2026",
+    "type": "Summer School",
+    "location": "Ulcinj, Montenegro",
+    "coordinates": [
+      41.9294,
+      19.2078
+    ],
+    "eventDateStart": "2026-09-28",
+    "eventDateEnd": "2026-10-02",
+    "deadline": "2026-05-15",
+    "description": "Focuses on innovation and competition economics for young researchers.",
+    "website": "http://www.euro-ciss.eu",
+    "topics": [
+      "Innovation",
+      "Competition"
+    ]
+  },
+  {
+    "id": "67",
+    "name": "Research Conference on Innovation and Finance 2026",
+    "type": "Conference",
+    "location": "Rome, Italy",
+    "coordinates": [
+      41.9028,
+      12.4964
+    ],
+    "eventDateStart": "2026-12-10",
+    "eventDateEnd": "2026-12-11",
+    "deadline": "2026-07-15",
+    "description": "Explores real and financial drivers of innovation, firm growth.",
+    "website": "https://www.bancaditalia.it",
+    "topics": [
+      "Innovation",
+      "Finance"
+    ]
+  },
+  {
+    "id": "68",
+    "name": "Innovation Economics, Policy and Entrepreneurship 2026",
+    "type": "Conference",
+    "location": "Online / Belgrade, Serbia",
+    "coordinates": [
+      0,
+      0
+    ],
+    "eventDateStart": "2026-10-20",
+    "eventDateEnd": "2026-10-21",
+    "deadline": "2026-06-01",
+    "description": "Brings together scholars, policymakers, and practitioners to discuss intersections in innovation economics.",
+    "website": "#",
+    "topics": [
+      "Innovation",
+      "Policy",
+      "Entrepreneurship"
+    ]
+  },
+  {
+    "id": "69",
+    "name": "ICEIEV 2026 (Economics of Innovation)",
+    "type": "Conference",
+    "location": "Online / California, USA",
+    "coordinates": [
+      0,
+      0
+    ],
+    "eventDateStart": "2026-06-13",
+    "eventDateEnd": "2026-06-14",
+    "deadline": "2026-03-01",
+    "description": "International Conference on Economics of Innovation and Entrepreneurial Ventures.",
+    "website": "#",
+    "topics": [
+      "Innovation",
+      "Entrepreneurship"
+    ]
+  },
+  {
+    "id": "70",
+    "name": "Joseph A. Schumpeter Society Conference (ISS 2026)",
+    "type": "Conference",
+    "location": "Strasbourg, France",
+    "coordinates": [
+      48.5734,
+      7.7521
+    ],
+    "eventDateStart": "2026-07-01",
+    "eventDateEnd": "2026-07-04",
+    "deadline": "2026-02-15",
+    "description": "Theme: Capitalism and Democracy: Paradigm Shifts and Creative Transformations.",
+    "website": "https://iss2026.sciencesconf.org/",
+    "topics": [
+      "Innovation",
+      "Macroeconomics",
+      "Growth"
+    ]
+  },
+  {
+    "id": "71",
+    "name": "Bordeaux Workshop on the Economics of Science and Innovation 2026",
+    "type": "Workshop",
+    "location": "Pessac (Bordeaux), France",
+    "coordinates": [
+      44.8062,
+      -0.6311
+    ],
+    "eventDateStart": "2026-07-15",
+    "eventDateEnd": "2026-07-16",
+    "deadline": "2026-06-21",
+    "description": "Focuses on the organization of scientific research, digitalization, AI, and job market for scientists.",
+    "website": "https://www.bse.u-bordeaux.fr/",
+    "topics": [
+      "Science",
+      "Innovation"
+    ]
+  },
+  {
+    "id": "72",
+    "name": "Atlanta Conference on Science and Innovation Policy 2027",
+    "type": "Conference",
+    "location": "Atlanta, GA, USA",
+    "coordinates": [
+      33.749,
+      -84.388
+    ],
+    "eventDateStart": "2027-05-19",
+    "eventDateEnd": "2027-05-21",
+    "deadline": "2027-01-15",
+    "description": "Focuses on science and innovation policy, public policy, and institutional dynamics.",
+    "website": "https://atlantaconference.org",
+    "topics": [
+      "Science",
+      "Policy",
+      "Innovation"
+    ]
+  }
+]
