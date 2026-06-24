@@ -69,7 +69,7 @@ const MapFocusUpdater = ({ selectedConferenceId, conferences }) => {
   return null;
 };
 
-const MapLayout = ({ conferences, selectedConferenceId }) => {
+const MapLayout = ({ conferences, selectedConferenceId, theme }) => {
   const defaultCenter = [48.8566, 2.3522];
 
   // Filter out conferences with 0,0 coordinates (online events)
@@ -100,7 +100,9 @@ const MapLayout = ({ conferences, selectedConferenceId }) => {
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>'
-          url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+          url={theme === 'light' 
+            ? "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png" 
+            : "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"}
         />
         <MapUpdater conferences={mappableConferences} />
         <MapFocusUpdater selectedConferenceId={selectedConferenceId} conferences={conferences} />
@@ -117,9 +119,9 @@ const MapLayout = ({ conferences, selectedConferenceId }) => {
               icon={createColoredIcon(iconColor)}
             >
               <Popup>
-                <div style={{ padding: '0.25rem', minWidth: '240px', maxHeight: '300px', overflowY: 'auto', color: '#f8fafc' }}>
+                <div style={{ padding: '0.25rem', minWidth: '240px', maxHeight: '300px', overflowY: 'auto', color: 'var(--text-main)' }}>
                   {isMultiple && (
-                    <div style={{ marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid rgba(255,255,255,0.1)', fontWeight: 'bold', color: '#94a3b8' }}>
+                    <div style={{ marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid rgba(var(--glass-rgb), 0.1)', fontWeight: 'bold', color: '#94a3b8' }}>
                       {group.length} Events at this location
                     </div>
                   )}
@@ -129,18 +131,18 @@ const MapLayout = ({ conferences, selectedConferenceId }) => {
                         href={conf.website !== '#' ? conf.website : '#'} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        style={{ margin: '0 0 0.5rem 0', color: '#93c5fd', fontSize: '1rem', fontWeight: 700, display: 'block', textDecoration: 'none' }}
+                        style={{ margin: '0 0 0.5rem 0', color: 'var(--link-color)', fontSize: '1rem', fontWeight: 700, display: 'block', textDecoration: 'none' }}
                       >
                         {conf.name} {conf.website !== '#' && '↗'}
                       </a>
-                      <p style={{ margin: '0 0 0.25rem 0', fontSize: '0.85rem', color: '#cbd5e1' }}>
-                        <strong style={{ color: '#f8fafc' }}>Type:</strong> {conf.type}
+                      <p style={{ margin: '0 0 0.25rem 0', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                        <strong style={{ color: 'var(--text-main)' }}>Type:</strong> {conf.type}
                       </p>
-                      <p style={{ margin: '0 0 0.25rem 0', fontSize: '0.85rem', color: '#cbd5e1' }}>
-                        <strong style={{ color: '#f8fafc' }}>Date:</strong> {conf.eventDateStart} → {conf.eventDateEnd}
+                      <p style={{ margin: '0 0 0.25rem 0', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                        <strong style={{ color: 'var(--text-main)' }}>Date:</strong> {conf.eventDateStart} → {conf.eventDateEnd}
                       </p>
-                      <p style={{ margin: '0 0 0.5rem 0', fontSize: '0.85rem', color: '#cbd5e1' }}>
-                        <strong style={{ color: '#f8fafc' }}>Deadline:</strong> {conf.deadline}
+                      <p style={{ margin: '0 0 0.5rem 0', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                        <strong style={{ color: 'var(--text-main)' }}>Deadline:</strong> {conf.deadline}
                       </p>
                       <div style={{ display: 'flex', gap: '0.5rem' }}>
                         <a 

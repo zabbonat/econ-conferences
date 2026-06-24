@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useCallback } from 'react';
-import { Map, Calendar as CalendarIcon, MapPin, CalendarDays, ExternalLink, Download, Star, Clock, AlertTriangle, CheckCircle, XCircle, BarChart3, Globe, BookOpen, GraduationCap, Bookmark, X } from 'lucide-react';
+import { Map, Calendar as CalendarIcon, MapPin, CalendarDays, ExternalLink, Download, Star, Clock, AlertTriangle, CheckCircle, XCircle, BarChart3, Globe, BookOpen, GraduationCap, Bookmark, X, Sun, Moon } from 'lucide-react';
 import MapLayout from './components/MapLayout';
 import CalendarView from './components/CalendarView';
 import FilterBar from './components/FilterBar';
@@ -32,6 +32,12 @@ function App() {
   const [modalConference, setModalConference] = useState(null);
   const [deadlineFilter, setDeadlineFilter] = useState(null); // 'open' | 'urgent' | null
   const [activeStatFilter, setActiveStatFilter] = useState(null);
+  const [theme, setTheme] = useState(() => localStorage.getItem('econ-theme') || 'dark');
+
+  React.useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('econ-theme', theme);
+  }, [theme]);
 
   const toggleFavorite = useCallback((confId) => {
     setFavorites(prev => {
@@ -99,11 +105,14 @@ function App() {
 
   return (
     <div className="app-container">
-      <header className="app-header glass-panel">
+      <header className="app-header glass-panel" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <h1 className="app-title">
           <CalendarDays size={28} color="var(--accent-primary)" />
           Econ Conferences Tracker
         </h1>
+        <button className="glass-button" onClick={() => setTheme(t => t === 'dark' ? 'light' : 'dark')} title="Toggle theme">
+          {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
+        </button>
       </header>
 
       <StatsBar 
@@ -265,7 +274,7 @@ function App() {
         </aside>
 
         <section className="content-area">
-          {activeView === 'map' && <MapLayout conferences={filteredConferences} selectedConferenceId={selectedConferenceId} />}
+          {activeView === 'map' && <MapLayout conferences={filteredConferences} selectedConferenceId={selectedConferenceId} theme={theme} />}
           {activeView === 'calendar' && <CalendarView conferences={filteredConferences} onSelectEvent={(conf) => handleCardClick(conf)} />}
         </section>
       </main>

@@ -1023,13 +1023,13 @@
     "id": "58",
     "name": "RND Management Conference 2027",
     "type": "Conference",
-    "location": "TBD",
+    "location": "Amsterdam, Netherlands",
     "coordinates": [
-      45,
-      10
+      52.3676,
+      4.9041
     ],
-    "eventDateStart": "2027-06-15",
-    "eventDateEnd": "2027-06-17",
+    "eventDateStart": "2027-06-28",
+    "eventDateEnd": "2027-06-30",
     "deadline": "2027-01-15",
     "description": "R&D Management Conference",
     "website": "https://www.rnd-conferences.org/",
