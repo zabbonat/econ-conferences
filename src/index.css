@@ -21,6 +21,8 @@
   --link-color: #93c5fd;
   --link-hover: #bfdbfe;
   
+  --title-gradient: linear-gradient(to right, #ffffff, #94a3b8);
+  
   --panel-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
   --card-shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.4);
   --calendar-off-range: rgba(0, 0, 0, 0.25);
@@ -37,6 +39,8 @@
   --bg-popup: #ffffff;
   --link-color: #2563eb;
   --link-hover: #1d4ed8;
+  
+  --title-gradient: linear-gradient(to right, #0f172a, #334155);
   
   --panel-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.06);
   --card-shadow-hover: 0 12px 30px rgba(0, 0, 0, 0.12);
@@ -148,7 +152,7 @@ body {
 .app-title {
   font-size: 1.4rem;
   font-weight: 700;
-  background: linear-gradient(to right, #fff, #94a3b8);
+  background: var(--title-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: flex;
