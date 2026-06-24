@@ -266,7 +266,7 @@ function App() {
 
         <section className="content-area">
           {activeView === 'map' && <MapLayout conferences={filteredConferences} selectedConferenceId={selectedConferenceId} />}
-          {activeView === 'calendar' && <CalendarView conferences={filteredConferences} />}
+          {activeView === 'calendar' && <CalendarView conferences={filteredConferences} onSelectEvent={(conf) => handleCardClick(conf)} />}
         </section>
       </main>
 

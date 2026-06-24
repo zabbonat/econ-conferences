@@ -92,7 +92,7 @@ const CustomToolbar = ({ date, onNavigate, view, onView }) => {
   );
 };
 
-const CalendarView = ({ conferences }) => {
+const CalendarView = ({ conferences, onSelectEvent }) => {
   const [showDeadlines, setShowDeadlines] = useState(true);
 
   const events = useMemo(() => {
@@ -133,6 +133,7 @@ const CalendarView = ({ conferences }) => {
           border: '1px solid #dc2626',
           color: '#fff',
           borderRadius: '4px',
+          cursor: 'pointer',
           fontSize: '0.75rem',
           padding: '1px 4px',
           fontWeight: '500',
@@ -147,6 +148,7 @@ const CalendarView = ({ conferences }) => {
         border: `1px solid ${colors.border}`,
         color: '#fff',
         borderRadius: '4px',
+        cursor: 'pointer',
         fontSize: '0.75rem',
         padding: '1px 4px',
         fontWeight: '500',
@@ -197,6 +199,7 @@ const CalendarView = ({ conferences }) => {
         views={[Views.MONTH, Views.AGENDA]}
         defaultDate={new Date(2026, 5, 1)}
         popup
+        onSelectEvent={(event) => onSelectEvent?.(event.resource)}
         components={{
           toolbar: CustomToolbar,
         }}
