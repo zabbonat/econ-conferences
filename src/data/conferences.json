@@ -87,7 +87,7 @@
     "eventDateEnd": "2026-09-04",
     "deadline": "2026-04-15",
     "description": "Economia eterodossa / innovazione",
-    "website": "https://www.aisre.it",
+    "website": "#",
     "topics": [
       "Heterodox",
       "Innovation"
@@ -106,7 +106,7 @@
     "eventDateEnd": "2026-10-16",
     "deadline": "2026-06-30",
     "description": "Innovazione, finance",
-    "website": "https://www.bancaditalia.it",
+    "website": "#",
     "topics": [
       "Innovation",
       "Finance"
@@ -162,7 +162,7 @@
     "eventDateEnd": "2026-07-24",
     "deadline": "2026-03-15",
     "description": "Economia applicata / macro / growth",
-    "website": "https://www.nber.org",
+    "website": "#",
     "topics": [
       "Applied",
       "Macro",
@@ -1128,7 +1128,7 @@
     "eventDateEnd": "2026-07-24",
     "deadline": "2026-03-15",
     "description": "National Bureau of Economic Research",
-    "website": "https://www.nber.org/",
+    "website": "#",
     "topics": [
       "Applied",
       "Macro",
@@ -1206,7 +1206,7 @@
     "eventDateEnd": "2026-12-11",
     "deadline": "2026-07-15",
     "description": "Explores real and financial drivers of innovation, firm growth.",
-    "website": "https://www.bancaditalia.it",
+    "website": "#",
     "topics": [
       "Innovation",
       "Finance"
@@ -1323,7 +1323,7 @@
     "eventDateEnd": "2026-09-11",
     "deadline": "2026-04-01",
     "description": "Theme: Global Transformations of Labour. Pre-conference for young scholars on Sep 8.",
-    "website": "https://eaepe.org/",
+    "website": "#",
     "topics": [
       "Evolutionary Economics",
       "Political Economy",
@@ -1343,7 +1343,7 @@
     "eventDateEnd": "2026-06-26",
     "deadline": "2026-03-01",
     "description": "Regioni tra innovazione e sostenibilità: le sfide per le politiche di sviluppo (Associazione Italiana di Scienze Regionali)",
-    "website": "https://www.aisre.it",
+    "website": "#",
     "topics": [
       "Regional Science",
       "Innovation",

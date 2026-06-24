@@ -68,7 +68,7 @@ function App() {
 
   const filteredConferences = useMemo(() => {
     const now = new Date();
-    return conferencesData.filter(conf => {
+    let result = conferencesData.filter(conf => {
       const matchesSearch = conf.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
                             conf.topics.some(t => t.toLowerCase().includes(searchTerm.toLowerCase())) ||
                             conf.location.toLowerCase().includes(searchTerm.toLowerCase());
@@ -90,7 +90,23 @@ function App() {
       }
       
       return matchesSearch && matchesType && matchesTopic && matchesPast && matchesYear && matchesFav && matchesDeadline;
+      });
+
+      result.sort((a, b) => {
+      const isAOpen = new Date(a.deadline) >= now;
+      const isBOpen = new Date(b.deadline) >= now;
+
+      if (isAOpen && !isBOpen) return -1;
+      if (!isAOpen && isBOpen) return 1;
+
+      if (isAOpen && isBOpen) {
+        return new Date(a.deadline) - new Date(b.deadline);
+      } else {
+        return new Date(a.eventDateStart) - new Date(b.eventDateStart);
+      }
     });
+
+    return result;
   }, [searchTerm, typeFilter, topicFilter, hidePast, yearFilter, showFavoritesOnly, favorites, deadlineFilter]);
 
   const handleCardClick = (conf) => {
