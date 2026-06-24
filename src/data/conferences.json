@@ -1329,5 +1329,25 @@
       "Political Economy",
       "Labor"
     ]
+  },
+  {
+    "id": "73",
+    "name": "XLVII AISRe Annual Scientific Conference",
+    "type": "Conference",
+    "location": "Florence, Italy",
+    "coordinates": [
+      43.7696,
+      11.2558
+    ],
+    "eventDateStart": "2026-06-24",
+    "eventDateEnd": "2026-06-26",
+    "deadline": "2026-03-01",
+    "description": "Regioni tra innovazione e sostenibilità: le sfide per le politiche di sviluppo (Associazione Italiana di Scienze Regionali)",
+    "website": "https://www.aisre.it",
+    "topics": [
+      "Regional Science",
+      "Innovation",
+      "Sustainability"
+    ]
   }
 ]
