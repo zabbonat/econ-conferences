@@ -20,18 +20,28 @@
   --bg-popup: #1e293b;
   --link-color: #93c5fd;
   --link-hover: #bfdbfe;
+  
+  --panel-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  --card-shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.4);
+  --calendar-off-range: rgba(0, 0, 0, 0.25);
+  --glass-button-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
 
 [data-theme='light'] {
   --bg-dark: #f1f5f9;
   --bg-panel: rgba(255, 255, 255, 0.85);
   --text-main: #0f172a;
-  --text-muted: #475569;
+  --text-muted: #64748b;
   --glass-rgb: 15, 23, 42;
   --shadow-rgb: 0, 0, 0;
   --bg-popup: #ffffff;
   --link-color: #2563eb;
   --link-hover: #1d4ed8;
+  
+  --panel-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.06);
+  --card-shadow-hover: 0 12px 30px rgba(0, 0, 0, 0.12);
+  --calendar-off-range: rgba(0, 0, 0, 0.04);
+  --glass-button-shadow: 0 4px 10px rgba(59, 130, 246, 0.2);
 }
 
 * {
@@ -88,7 +98,7 @@ body {
 .glass-button.primary {
   background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
   border: none;
-  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+  box-shadow: var(--glass-button-shadow);
 }
 
 .glass-button.primary:hover {
@@ -860,11 +870,12 @@ select.filter-input {
 
 /* Off-range & today */
 .rbc-off-range-bg {
-  background: rgba(var(--shadow-rgb), 0.25) !important;
+  background: var(--calendar-off-range) !important;
 }
 
 .rbc-off-range {
-  color: rgba(148, 163, 184, 0.35);
+  color: var(--text-muted);
+    opacity: 0.5;
 }
 
 .rbc-today {
@@ -893,6 +904,7 @@ select.filter-input {
 
 /* Event pills */
 .rbc-event {
+    color: #ffffff !important;
   border-radius: 4px !important;
   font-size: 0.73rem !important;
   padding: 1px 4px !important;

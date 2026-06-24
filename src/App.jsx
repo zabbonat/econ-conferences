@@ -32,7 +32,7 @@ function App() {
   const [modalConference, setModalConference] = useState(null);
   const [deadlineFilter, setDeadlineFilter] = useState(null); // 'open' | 'urgent' | null
   const [activeStatFilter, setActiveStatFilter] = useState(null);
-  const [theme, setTheme] = useState(() => localStorage.getItem('econ-theme') || 'dark');
+  const [theme, setTheme] = useState(() => localStorage.getItem('econ-theme') || 'light');
 
   React.useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
