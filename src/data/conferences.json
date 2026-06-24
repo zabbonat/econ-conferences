@@ -1157,16 +1157,16 @@
   },
   {
     "id": "65",
-    "name": "ECOINN Summer School 2026",
+    "name": "ECOINN Summer School 2025",
     "type": "Summer School",
     "location": "Pisa, Italy",
     "coordinates": [
       43.7228,
       10.4017
     ],
-    "eventDateStart": "2026-06-22",
-    "eventDateEnd": "2026-06-26",
-    "deadline": "2026-04-26",
+    "eventDateStart": "2025-06-22",
+    "eventDateEnd": "2025-06-26",
+    "deadline": "2025-04-26",
     "description": "Economics of Innovation and Technological Change (Scuola Superiore Sant'Anna)",
     "website": "https://www.santannapisa.it/it/ecoinn-economics-innovation-and-technological-change",
     "topics": [
