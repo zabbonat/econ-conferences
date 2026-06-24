@@ -13,18 +13,19 @@ const ConferenceModal = ({ conference, onClose, onLocate, isFavorite, onToggleFa
         </button>
         
         <div className="modal-header">
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-            <h2>
+          <div style={{ display: 'flex', alignItems: 'flex-start', paddingRight: '2rem' }}>
+            <h2 style={{ paddingRight: '0', margin: 0, lineHeight: 1.2 }}>
               {conf.website !== '#' ? (
                 <a 
                   href={conf.website} 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  style={{ color: 'inherit', textDecoration: 'none' }}
-                  onMouseEnter={(e) => e.target.style.textDecoration = 'underline'}
-                  onMouseLeave={(e) => e.target.style.textDecoration = 'none'}
+                  style={{ color: 'inherit', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}
+                  onMouseEnter={(e) => e.currentTarget.style.textDecoration = 'underline'}
+                  onMouseLeave={(e) => e.currentTarget.style.textDecoration = 'none'}
+                  title="Open official website"
                 >
-                  {conf.name}
+                  {conf.name} <ExternalLink size={18} style={{ opacity: 0.5 }} />
                 </a>
               ) : (
                 conf.name
@@ -32,8 +33,9 @@ const ConferenceModal = ({ conference, onClose, onLocate, isFavorite, onToggleFa
             </h2>
             <button 
               className="fav-button" 
-              style={{ marginLeft: '1rem' }}
+              style={{ marginLeft: '0.75rem', marginTop: '0.1rem', flexShrink: 0 }}
               onClick={() => onToggleFavorite(conf.id)}
+              title={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
             >
               <Bookmark size={20} fill={isFavorite ? '#fbbf24' : 'none'} color={isFavorite ? '#fbbf24' : 'var(--text-muted)'} />
             </button>
@@ -78,10 +80,14 @@ const ConferenceModal = ({ conference, onClose, onLocate, isFavorite, onToggleFa
               <Navigation size={16} /> Show on Map
             </button>
           )}
-          {conf.website !== '#' && (
+          {conf.website !== '#' ? (
             <a href={conf.website} target="_blank" rel="noopener noreferrer" className="glass-button" style={{ textDecoration: 'none' }}>
               <ExternalLink size={16} /> Website
             </a>
+          ) : (
+            <button className="glass-button" disabled style={{ opacity: 0.5, cursor: 'not-allowed' }} title="Link not available yet">
+              <ExternalLink size={16} /> Website TBA
+            </button>
           )}
           <a 
             href={generateGoogleCalendarUrl(conf)} 
