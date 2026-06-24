@@ -75,6 +75,14 @@ const MapLayout = ({ conferences, selectedConferenceId }) => {
   // Filter out conferences with 0,0 coordinates (online events)
   const mappableConferences = conferences.filter(c => c.coordinates[0] !== 0 || c.coordinates[1] !== 0);
 
+  // Group by coordinates to prevent overlapping markers
+  const groupedConferences = {};
+  mappableConferences.forEach(conf => {
+    const key = `${conf.coordinates[0]},${conf.coordinates[1]}`;
+    if (!groupedConferences[key]) groupedConferences[key] = [];
+    groupedConferences[key].push(conf);
+  });
+
   return (
     <div className="glass-panel" style={{ height: '100%', overflow: 'hidden', position: 'relative' }}>
       {/* Map Legend */}
@@ -82,6 +90,7 @@ const MapLayout = ({ conferences, selectedConferenceId }) => {
         <div className="legend-item"><span className="legend-dot" style={{ background: '#3b82f6' }}></span> Conference</div>
         <div className="legend-item"><span className="legend-dot" style={{ background: '#8b5cf6' }}></span> Workshop</div>
         <div className="legend-item"><span className="legend-dot" style={{ background: '#f59e0b' }}></span> Summer School</div>
+        <div className="legend-item"><span className="legend-dot" style={{ background: '#ffffff', border: '1px solid #333' }}></span> Multiple Events</div>
       </div>
 
       <MapContainer 
@@ -96,53 +105,68 @@ const MapLayout = ({ conferences, selectedConferenceId }) => {
         <MapUpdater conferences={mappableConferences} />
         <MapFocusUpdater selectedConferenceId={selectedConferenceId} conferences={conferences} />
         
-        {mappableConferences.map(conf => (
-          <Marker 
-            key={conf.id} 
-            position={conf.coordinates}
-            icon={createColoredIcon(typeColors[conf.type] || '#3b82f6')}
-          >
-            <Popup>
-              <div style={{ padding: '0.5rem', minWidth: '220px', color: '#f8fafc' }}>
-                <a 
-                  href={conf.website !== '#' ? conf.website : '#'} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  style={{ margin: '0 0 0.5rem 0', color: '#93c5fd', fontSize: '1rem', fontWeight: 700, display: 'block', textDecoration: 'none' }}
-                >
-                  {conf.name} ↗
-                </a>
-                <p style={{ margin: '0 0 0.25rem 0', fontSize: '0.85rem', color: '#cbd5e1' }}>
-                  <strong style={{ color: '#f8fafc' }}>Type:</strong> {conf.type}
-                </p>
-                <p style={{ margin: '0 0 0.25rem 0', fontSize: '0.85rem', color: '#cbd5e1' }}>
-                  <strong style={{ color: '#f8fafc' }}>Date:</strong> {conf.eventDateStart} → {conf.eventDateEnd}
-                </p>
-                <p style={{ margin: '0 0 0.5rem 0', fontSize: '0.85rem', color: '#cbd5e1' }}>
-                  <strong style={{ color: '#f8fafc' }}>Deadline:</strong> {conf.deadline}
-                </p>
-                <div style={{ display: 'flex', gap: '0.5rem' }}>
-                  <a 
-                    href={generateGoogleCalendarUrl(conf)} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="glass-button" 
-                    style={{ flex: 1, textDecoration: 'none', justifyContent: 'center', fontSize: '0.8rem' }}
-                  >
-                    <Calendar size={14} /> GCal
-                  </a>
-                  <button 
-                    className="glass-button primary" 
-                    style={{ flex: 1, justifyContent: 'center', fontSize: '0.8rem' }}
-                    onClick={() => generateIcsFile(conf)}
-                  >
-                    <Download size={14} /> .ICS
-                  </button>
+        {Object.entries(groupedConferences).map(([coordKey, group]) => {
+          const isMultiple = group.length > 1;
+          const coords = group[0].coordinates;
+          const iconColor = isMultiple ? '#ffffff' : (typeColors[group[0].type] || '#3b82f6');
+          
+          return (
+            <Marker 
+              key={coordKey} 
+              position={coords}
+              icon={createColoredIcon(iconColor)}
+            >
+              <Popup>
+                <div style={{ padding: '0.25rem', minWidth: '240px', maxHeight: '300px', overflowY: 'auto', color: '#f8fafc' }}>
+                  {isMultiple && (
+                    <div style={{ marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid rgba(255,255,255,0.1)', fontWeight: 'bold', color: '#94a3b8' }}>
+                      {group.length} Events at this location
+                    </div>
+                  )}
+                  {group.map((conf, idx) => (
+                    <div key={conf.id} style={{ marginBottom: idx < group.length - 1 ? '1.5rem' : '0' }}>
+                      <a 
+                        href={conf.website !== '#' ? conf.website : '#'} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        style={{ margin: '0 0 0.5rem 0', color: '#93c5fd', fontSize: '1rem', fontWeight: 700, display: 'block', textDecoration: 'none' }}
+                      >
+                        {conf.name} {conf.website !== '#' && '↗'}
+                      </a>
+                      <p style={{ margin: '0 0 0.25rem 0', fontSize: '0.85rem', color: '#cbd5e1' }}>
+                        <strong style={{ color: '#f8fafc' }}>Type:</strong> {conf.type}
+                      </p>
+                      <p style={{ margin: '0 0 0.25rem 0', fontSize: '0.85rem', color: '#cbd5e1' }}>
+                        <strong style={{ color: '#f8fafc' }}>Date:</strong> {conf.eventDateStart} → {conf.eventDateEnd}
+                      </p>
+                      <p style={{ margin: '0 0 0.5rem 0', fontSize: '0.85rem', color: '#cbd5e1' }}>
+                        <strong style={{ color: '#f8fafc' }}>Deadline:</strong> {conf.deadline}
+                      </p>
+                      <div style={{ display: 'flex', gap: '0.5rem' }}>
+                        <a 
+                          href={generateGoogleCalendarUrl(conf)} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="glass-button" 
+                          style={{ flex: 1, textDecoration: 'none', justifyContent: 'center', fontSize: '0.8rem', padding: '0.3rem' }}
+                        >
+                          <Calendar size={14} /> GCal
+                        </a>
+                        <button 
+                          className="glass-button primary" 
+                          style={{ flex: 1, justifyContent: 'center', fontSize: '0.8rem', padding: '0.3rem' }}
+                          onClick={() => generateIcsFile(conf)}
+                        >
+                          <Download size={14} /> .ICS
+                        </button>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              </div>
-            </Popup>
-          </Marker>
-        ))}
+              </Popup>
+            </Marker>
+          );
+        })}
       </MapContainer>
     </div>
   );
