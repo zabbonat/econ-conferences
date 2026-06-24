@@ -1,6 +1,7 @@
-import React, { useMemo, useState } from 'react';
-import { Calendar, dateFnsLocalizer, Views } from 'react-big-calendar';
-import { format, parse, startOfWeek, getDay } from 'date-fns';
+import React, { useMemo, useState, useCallback } from 'react';
+import { Calendar, dateFnsLocalizer, Views, Navigate } from 'react-big-calendar';
+import { format, parse, startOfWeek, getDay, addMonths, subMonths } from 'date-fns';
+import { ChevronLeft, ChevronRight, Calendar as CalIcon } from 'lucide-react';
 import enUS from 'date-fns/locale/en-US';
 
 const locales = {
@@ -21,13 +22,82 @@ const typeColors = {
   'Summer School': { bg: 'rgba(245, 158, 11, 0.85)', border: '#d97706' },
 };
 
+const MONTHS = [
+  'January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December'
+];
+
+// Custom toolbar with month/year selectors and arrow navigation
+const CustomToolbar = ({ date, onNavigate, view, onView }) => {
+  const month = date.getMonth();
+  const year = date.getFullYear();
+
+  const goBack = () => onNavigate(Navigate.PREVIOUS);
+  const goNext = () => onNavigate(Navigate.NEXT);
+  const goToday = () => onNavigate(Navigate.TODAY);
+
+  const handleMonthChange = (e) => {
+    const newMonth = parseInt(e.target.value);
+    onNavigate(Navigate.DATE, new Date(year, newMonth, 1));
+  };
+
+  const handleYearChange = (e) => {
+    const newYear = parseInt(e.target.value);
+    onNavigate(Navigate.DATE, new Date(newYear, month, 1));
+  };
+
+  return (
+    <div className="cal-custom-toolbar">
+      <div className="cal-nav-group">
+        <button className="cal-nav-btn" onClick={goBack} title="Previous month">
+          <ChevronLeft size={18} />
+        </button>
+
+        <select className="cal-select" value={month} onChange={handleMonthChange}>
+          {MONTHS.map((m, i) => (
+            <option key={i} value={i}>{m}</option>
+          ))}
+        </select>
+
+        <select className="cal-select cal-select-year" value={year} onChange={handleYearChange}>
+          {[2026, 2027, 2028].map(y => (
+            <option key={y} value={y}>{y}</option>
+          ))}
+        </select>
+
+        <button className="cal-nav-btn" onClick={goNext} title="Next month">
+          <ChevronRight size={18} />
+        </button>
+
+        <button className="cal-today-btn" onClick={goToday}>
+          <CalIcon size={14} /> Today
+        </button>
+      </div>
+
+      <div className="cal-view-group">
+        <button 
+          className={`cal-view-btn ${view === Views.MONTH ? 'active' : ''}`}
+          onClick={() => onView(Views.MONTH)}
+        >
+          Month
+        </button>
+        <button 
+          className={`cal-view-btn ${view === Views.AGENDA ? 'active' : ''}`}
+          onClick={() => onView(Views.AGENDA)}
+        >
+          Agenda
+        </button>
+      </div>
+    </div>
+  );
+};
+
 const CalendarView = ({ conferences }) => {
   const [showDeadlines, setShowDeadlines] = useState(true);
 
   const events = useMemo(() => {
     const allEvents = [];
     conferences.forEach(conf => {
-      // Conference Event
       allEvents.push({
         id: `${conf.id}-event`,
         title: conf.name,
@@ -39,7 +109,6 @@ const CalendarView = ({ conferences }) => {
         resource: conf
       });
 
-      // Deadline Event
       if (showDeadlines) {
         allEvents.push({
           id: `${conf.id}-deadline`,
@@ -91,11 +160,7 @@ const CalendarView = ({ conferences }) => {
                     date.getMonth() === today.getMonth() && 
                     date.getFullYear() === today.getFullYear();
     if (isToday) {
-      return {
-        style: {
-          background: 'rgba(59, 130, 246, 0.12)',
-        }
-      };
+      return { style: { background: 'rgba(59, 130, 246, 0.12)' } };
     }
     return {};
   };
@@ -132,6 +197,9 @@ const CalendarView = ({ conferences }) => {
         views={[Views.MONTH, Views.AGENDA]}
         defaultDate={new Date(2026, 5, 1)}
         popup
+        components={{
+          toolbar: CustomToolbar,
+        }}
         tooltipAccessor={(event) => `${event.title}\n${event.resource?.location || ''}`}
         formats={{
           monthHeaderFormat: (date) => format(date, 'MMMM yyyy'),
