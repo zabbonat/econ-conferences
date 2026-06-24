@@ -1309,5 +1309,44 @@
       "Policy",
       "Innovation"
     ]
+  },
+  {
+    "id": "72",
+    "name": "37th EAEPE Annual Conference 2025",
+    "type": "Conference",
+    "location": "Athens, Greece",
+    "coordinates": [
+      37.9838,
+      23.7275
+    ],
+    "eventDateStart": "2025-09-24",
+    "eventDateEnd": "2025-09-26",
+    "deadline": "2025-04-01",
+    "description": "European Association for Evolutionary Political Economy (EAEPE) Annual Conference",
+    "website": "https://eaepe.org/",
+    "topics": [
+      "Evolutionary Economics",
+      "Political Economy"
+    ]
+  },
+  {
+    "id": "73",
+    "name": "38th EAEPE Annual Conference 2026",
+    "type": "Conference",
+    "location": "Lausanne, Switzerland",
+    "coordinates": [
+      46.5197,
+      6.6323
+    ],
+    "eventDateStart": "2026-09-09",
+    "eventDateEnd": "2026-09-11",
+    "deadline": "2026-04-01",
+    "description": "Theme: Global Transformations of Labour. Pre-conference for young scholars on Sep 8.",
+    "website": "https://eaepe.org/",
+    "topics": [
+      "Evolutionary Economics",
+      "Political Economy",
+      "Labor"
+    ]
   }
 ]
