@@ -245,18 +245,18 @@
   },
   {
     "id": "14",
-    "name": "Italian Economic Association Annual Conference",
+    "name": "67ª RSA SIE - Università di Cagliari",
     "type": "Conference",
-    "location": "Naples, Italy",
+    "location": "Cagliari, Italy",
     "coordinates": [
-      40.8518,
-      14.2681
+      39.2238,
+      9.1128
     ],
     "eventDateStart": "2026-10-22",
     "eventDateEnd": "2026-10-24",
     "deadline": "2026-05-31",
     "description": "General economics",
-    "website": "https://www.siecon.org",
+    "website": "https://www.siecon.org/it/eventi/67a-rsa-universita-di-cagliari",
     "topics": [
       "General Economics"
     ]
@@ -1308,25 +1308,6 @@
       "Science",
       "Policy",
       "Innovation"
-    ]
-  },
-  {
-    "id": "72",
-    "name": "37th EAEPE Annual Conference 2025",
-    "type": "Conference",
-    "location": "Athens, Greece",
-    "coordinates": [
-      37.9838,
-      23.7275
-    ],
-    "eventDateStart": "2025-09-24",
-    "eventDateEnd": "2025-09-26",
-    "deadline": "2025-04-01",
-    "description": "European Association for Evolutionary Political Economy (EAEPE) Annual Conference",
-    "website": "https://eaepe.org/",
-    "topics": [
-      "Evolutionary Economics",
-      "Political Economy"
     ]
   },
   {
