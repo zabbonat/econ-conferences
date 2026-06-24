@@ -75,10 +75,10 @@ const MapLayout = ({ conferences, selectedConferenceId, theme }) => {
   // Filter out conferences with 0,0 coordinates (online events)
   const mappableConferences = conferences.filter(c => c.coordinates[0] !== 0 || c.coordinates[1] !== 0);
 
-  // Group by coordinates to prevent overlapping markers
+  // Group by location string to prevent overlapping markers for events in the same city
   const groupedConferences = {};
   mappableConferences.forEach(conf => {
-    const key = `${conf.coordinates[0]},${conf.coordinates[1]}`;
+    const key = conf.location || `${conf.coordinates[0]},${conf.coordinates[1]}`;
     if (!groupedConferences[key]) groupedConferences[key] = [];
     groupedConferences[key].push(conf);
   });
