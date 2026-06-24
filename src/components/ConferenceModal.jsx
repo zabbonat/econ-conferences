@@ -14,7 +14,22 @@ const ConferenceModal = ({ conference, onClose, onLocate, isFavorite, onToggleFa
         
         <div className="modal-header">
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-            <h2>{conf.name}</h2>
+            <h2>
+              {conf.website !== '#' ? (
+                <a 
+                  href={conf.website} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  style={{ color: 'inherit', textDecoration: 'none' }}
+                  onMouseEnter={(e) => e.target.style.textDecoration = 'underline'}
+                  onMouseLeave={(e) => e.target.style.textDecoration = 'none'}
+                >
+                  {conf.name}
+                </a>
+              ) : (
+                conf.name
+              )}
+            </h2>
             <button 
               className="fav-button" 
               style={{ marginLeft: '1rem' }}
