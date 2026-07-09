@@ -1369,5 +1369,26 @@
       "LLM",
       "Innovation Management"
     ]
+  },
+  {
+    "id": "75",
+    "name": "RISE 9 Workshop",
+    "type": "Workshop",
+    "location": "Munich, Germany",
+    "coordinates": [
+      48.1371,
+      11.5761
+    ],
+    "eventDateStart": "2026-12-14",
+    "eventDateEnd": "2026-12-15",
+    "deadline": "2026-07-24",
+    "description": "9th RISE Workshop (Research, Innovation, Science and Entrepreneurship) by young researchers for young researchers at Max Planck Institute for Innovation and Competition. Keynote speaker: Chiara Franzoni.",
+    "website": "https://lnkd.in/ekBJafYM",
+    "topics": [
+      "Research",
+      "Innovation",
+      "Science",
+      "Entrepreneurship"
+    ]
   }
 ]
