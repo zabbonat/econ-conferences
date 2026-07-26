@@ -83,6 +83,10 @@ function shiftYear(dateStr, years) {
   return `${year}-${parts[1]}-${parts[2]}`;
 }
 
+
+
+run();
+
 async function fetchLiveDetails(conf, nextYear, apiKey) {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
   
@@ -115,9 +119,6 @@ If you cannot find reliable details for the ${nextYear} edition, return exactly:
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       contents: [{ parts: [{ text: prompt }] }],
-      generationConfig: {
-        responseMimeType: 'application/json'
-      },
       tools: [{ googleSearch: {} }]
     })
   });
@@ -127,16 +128,15 @@ If you cannot find reliable details for the ${nextYear} edition, return exactly:
   }
 
   const result = await response.json();
-  const text = result.candidates?.[0]?.content?.parts?.[0]?.text;
+  let text = result.candidates?.[0]?.content?.parts?.[0]?.text;
   if (!text) return null;
 
   try {
-    const parsed = JSON.parse(text.trim());
+    text = text.replace(/```json/g, '').replace(/```/g, '').trim();
+    const parsed = JSON.parse(text);
     return parsed;
   } catch (e) {
     console.error("Failed to parse response text:", text);
     return null;
   }
 }
-
-run();

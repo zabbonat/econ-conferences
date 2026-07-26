@@ -1,16 +1,137 @@
 [
   {
+    "id": "1004",
+    "name": "Stanford Institute for Theoretical Economics (SITE)",
+    "type": "Conference",
+    "location": "Stanford, CA, USA",
+    "coordinates": [
+      37.4275,
+      -122.1697
+    ],
+    "eventDateStart": "2026-07-20",
+    "eventDateEnd": "2026-09-11",
+    "deadline": "2026-05-01",
+    "description": "Summer workshops covering economic theory, empirical work, and mathematical economics",
+    "website": "https://economics.stanford.edu/",
+    "topics": [
+      "Economic Theory",
+      "Empirical Economics",
+      "Macro",
+      "Micro"
+    ]
+  },
+  {
+    "id": "1005",
+    "name": "North American Summer Meeting of the Econometric Society (NASMES)",
+    "type": "Conference",
+    "location": "Atlanta, GA, USA",
+    "coordinates": [
+      33.7925,
+      -84.324
+    ],
+    "eventDateStart": "2027-06-11",
+    "eventDateEnd": "2027-06-14",
+    "deadline": "2027-02-28",
+    "description": "Major international conference featuring research from leading global institutions",
+    "website": "https://www.econometricsociety.org/",
+    "topics": [
+      "Econometrics",
+      "General Economics"
+    ]
+  },
+  {
+    "id": "1002",
+    "name": "DAISY International Summer School",
+    "type": "Summer School",
+    "location": "Taranto, Italy",
+    "coordinates": [
+      40.4644,
+      17.247
+    ],
+    "eventDateStart": "2026-09-07",
+    "eventDateEnd": "2026-09-11",
+    "deadline": "2026-06-30",
+    "description": "Data Analytics for Innovation and SustainabilitY",
+    "website": "#",
+    "topics": [
+      "Innovation",
+      "Sustainability",
+      "Data Analytics"
+    ]
+  },
+  {
+    "id": "1003",
+    "name": "Innovation, Growth and International Production",
+    "type": "Advanced Course",
+    "location": "Rome, Italy",
+    "coordinates": [
+      41.9028,
+      12.4964
+    ],
+    "eventDateStart": "2027-05-25",
+    "eventDateEnd": "2027-05-29",
+    "deadline": "2027-04-30",
+    "description": "Advanced Course on Innovation, AI, growth, and global value chains (Sapienza)",
+    "website": "https://corsidilaurea.uniroma1.it",
+    "topics": [
+      "Innovation",
+      "Growth",
+      "AI"
+    ]
+  },
+  {
+    "id": "1001",
+    "name": "Entrepreneurial Ecosystems around the Globe: Theory, Practice and Analytics",
+    "type": "Summer School",
+    "location": "Utrecht, The Netherlands",
+    "coordinates": [
+      52.0907,
+      5.1214
+    ],
+    "eventDateStart": "2027-07-14",
+    "eventDateEnd": "2027-07-17",
+    "deadline": "2027-06-05",
+    "description": "Theory, Practice and Analytics of entrepreneurial ecosystems globally",
+    "website": "https://utrechtsummerschool.nl/courses/business-economics/entrepreneurial-ecosystems-around-the-globe-theory-practice-and",
+    "topics": [
+      "Entrepreneurship",
+      "Economic Development",
+      "Data",
+      "Policy"
+    ]
+  },
+  {
+    "id": "1000",
+    "name": "Advanced Econometric Methods for Complex Data 2027",
+    "type": "Summer School",
+    "location": "Bertinoro, Italy",
+    "coordinates": [
+      44.1481,
+      12.1319
+    ],
+    "eventDateStart": "2027-07-19",
+    "eventDateEnd": "2027-07-25",
+    "deadline": "2027-05-17",
+    "description": "Panels, Networks and Structural VARs (SIdE Summer School)",
+    "website": "https://www.side-iea.it/events/courses/advanced-econometric-methods-complex-data-panels-networks-and-structural-vars-2026",
+    "topics": [
+      "Econometrics",
+      "Networks",
+      "Macro"
+    ]
+  },
+  {
     "id": "1",
-    "name": "DRUID Conference 2026",
+    "name": "DRUID Conference 2027",
     "type": "Conference",
     "location": "Copenhagen, Denmark",
     "coordinates": [
       55.6761,
       12.5683
     ],
-    "eventDateStart": "2026-06-09",
-    "eventDateEnd": "2026-06-11",
-    "deadline": "2026-03-01",
+    "eventDateStart": "2027-06-09",
+    "eventDateEnd": "2027-06-11",
+    "deadline": "2027-03-01",
     "description": "Innovation, entrepreneurship",
     "website": "https://druid.dk",
     "topics": [
@@ -20,16 +141,16 @@
   },
   {
     "id": "2",
-    "name": "DRUID Academy 2026",
+    "name": "DRUID Academy 2027",
     "type": "Workshop",
     "location": "Aalborg, Denmark",
     "coordinates": [
       57.0488,
       9.9217
     ],
-    "eventDateStart": "2026-01-20",
-    "eventDateEnd": "2026-01-22",
-    "deadline": "2025-10-15",
+    "eventDateStart": "2027-01-20",
+    "eventDateEnd": "2027-01-22",
+    "deadline": "2026-10-15",
     "description": "PhD / innovation studies",
     "website": "https://conference.druid.dk",
     "topics": [
@@ -46,9 +167,9 @@
       50.8503,
       4.3517
     ],
-    "eventDateStart": "2026-05-15",
-    "eventDateEnd": "2026-05-15",
-    "deadline": "2026-01-31",
+    "eventDateStart": "2027-05-15",
+    "eventDateEnd": "2027-05-15",
+    "deadline": "2027-01-31",
     "description": "Macroeconomics / policy",
     "website": "https://economy-finance.ec.europa.eu/events_en",
     "topics": [
@@ -114,16 +235,16 @@
   },
   {
     "id": "7",
-    "name": "IFEC 2026",
+    "name": "IFEC 2027",
     "type": "Conference",
     "location": "Paris, France",
     "coordinates": [
       48.8566,
       2.3522
     ],
-    "eventDateStart": "2026-07-10",
-    "eventDateEnd": "2026-07-12",
-    "deadline": "2026-03-20",
+    "eventDateStart": "2027-07-10",
+    "eventDateEnd": "2027-07-12",
+    "deadline": "2027-03-20",
     "description": "Innovazione, sustainable finance",
     "website": "#",
     "topics": [
@@ -140,9 +261,9 @@
       39.9526,
       -75.1652
     ],
-    "eventDateStart": "2026-01-03",
-    "eventDateEnd": "2026-01-05",
-    "deadline": "2025-04-01",
+    "eventDateStart": "2027-01-03",
+    "eventDateEnd": "2027-01-05",
+    "deadline": "2026-04-01",
     "description": "Economia generale",
     "website": "https://www.aeaweb.org",
     "topics": [
@@ -158,9 +279,9 @@
       42.3736,
       -71.1097
     ],
-    "eventDateStart": "2026-07-06",
-    "eventDateEnd": "2026-07-24",
-    "deadline": "2026-03-15",
+    "eventDateStart": "2027-07-06",
+    "eventDateEnd": "2027-07-24",
+    "deadline": "2027-03-15",
     "description": "Economia applicata / macro / growth",
     "website": "#",
     "topics": [
@@ -171,16 +292,16 @@
   },
   {
     "id": "10",
-    "name": "RES 2026 Annual Conference",
+    "name": "RES 2027 Annual Conference",
     "type": "Conference",
     "location": "Bristol, UK",
     "coordinates": [
       51.4545,
       -2.5879
     ],
-    "eventDateStart": "2026-04-14",
-    "eventDateEnd": "2026-04-16",
-    "deadline": "2025-10-31",
+    "eventDateStart": "2027-04-14",
+    "eventDateEnd": "2027-04-16",
+    "deadline": "2026-10-31",
     "description": "General economics",
     "website": "https://res.org.uk",
     "topics": [
@@ -282,16 +403,16 @@
   },
   {
     "id": "16",
-    "name": "Economics of Mental Health Workshop 2026",
+    "name": "Economics of Mental Health Workshop 2027",
     "type": "Workshop",
     "location": "York, UK",
     "coordinates": [
       53.959,
       -1.0815
     ],
-    "eventDateStart": "2026-06-20",
-    "eventDateEnd": "2026-06-21",
-    "deadline": "2026-02-10",
+    "eventDateStart": "2027-06-20",
+    "eventDateEnd": "2027-06-21",
+    "deadline": "2027-02-10",
     "description": "Health economics",
     "website": "#",
     "topics": [
@@ -300,16 +421,16 @@
   },
   {
     "id": "17",
-    "name": "Gender Gaps Conference 2026",
+    "name": "Gender Gaps Conference 2027",
     "type": "Conference",
     "location": "Stockholm, Sweden",
     "coordinates": [
       59.3293,
       18.0686
     ],
-    "eventDateStart": "2026-05-28",
-    "eventDateEnd": "2026-05-29",
-    "deadline": "2026-01-15",
+    "eventDateStart": "2027-05-28",
+    "eventDateEnd": "2027-05-29",
+    "deadline": "2027-01-15",
     "description": "Gender economics",
     "website": "#",
     "topics": [
@@ -1002,16 +1123,16 @@
   },
   {
     "id": "57",
-    "name": "RND Management Conference 2026",
+    "name": "RND Management Conference 2027",
     "type": "Conference",
     "location": "Manchester, UK",
     "coordinates": [
       53.4808,
       -2.2426
     ],
-    "eventDateStart": "2026-06-22",
-    "eventDateEnd": "2026-06-24",
-    "deadline": "2026-01-15",
+    "eventDateStart": "2027-06-22",
+    "eventDateEnd": "2027-06-24",
+    "deadline": "2027-01-15",
     "description": "R&D Management Conference",
     "website": "https://rnd2026.org",
     "topics": [
@@ -1078,16 +1199,16 @@
   },
   {
     "id": "61",
-    "name": "BSE Summer School 2026",
+    "name": "BSE Summer School 2027",
     "type": "Summer School",
     "location": "Barcelona, Spain",
     "coordinates": [
       41.3851,
       2.1734
     ],
-    "eventDateStart": "2026-06-22",
-    "eventDateEnd": "2026-07-10",
-    "deadline": "2026-05-01",
+    "eventDateStart": "2027-06-22",
+    "eventDateEnd": "2027-07-10",
+    "deadline": "2027-05-01",
     "description": "Barcelona School of Economics Summer School",
     "website": "https://bse.eu/summer-school",
     "topics": [
@@ -1117,16 +1238,16 @@
   },
   {
     "id": "63",
-    "name": "NBER Summer Institute 2026",
+    "name": "NBER Summer Institute 2027",
     "type": "Summer School",
     "location": "Cambridge, MA, USA",
     "coordinates": [
       42.3736,
       -71.1097
     ],
-    "eventDateStart": "2026-07-06",
-    "eventDateEnd": "2026-07-24",
-    "deadline": "2026-03-15",
+    "eventDateStart": "2027-07-06",
+    "eventDateEnd": "2027-07-24",
+    "deadline": "2027-03-15",
     "description": "National Bureau of Economic Research",
     "website": "#",
     "topics": [
@@ -1137,16 +1258,16 @@
   },
   {
     "id": "64",
-    "name": "KIDS Summer School 2026",
+    "name": "KIDS Summer School 2027",
     "type": "Summer School",
     "location": "Nice, France",
     "coordinates": [
       43.7102,
       7.262
     ],
-    "eventDateStart": "2026-07-15",
-    "eventDateEnd": "2026-07-19",
-    "deadline": "2026-04-15",
+    "eventDateStart": "2027-07-15",
+    "eventDateEnd": "2027-07-19",
+    "deadline": "2027-04-15",
     "description": "Knowledge, Innovation, and Digitalization Summer School",
     "website": "#",
     "topics": [
@@ -1157,16 +1278,16 @@
   },
   {
     "id": "65",
-    "name": "ECOINN Summer School 2025",
+    "name": "ECOINN Summer School 2026",
     "type": "Summer School",
     "location": "Pisa, Italy",
     "coordinates": [
       43.7228,
       10.4017
     ],
-    "eventDateStart": "2025-06-22",
-    "eventDateEnd": "2025-06-26",
-    "deadline": "2025-04-26",
+    "eventDateStart": "2026-06-22",
+    "eventDateEnd": "2026-06-26",
+    "deadline": "2026-04-26",
     "description": "Economics of Innovation and Technological Change (Scuola Superiore Sant'Anna)",
     "website": "https://www.santannapisa.it/it/ecoinn-economics-innovation-and-technological-change",
     "topics": [
@@ -1234,16 +1355,16 @@
   },
   {
     "id": "69",
-    "name": "ICEIEV 2026 (Economics of Innovation)",
+    "name": "ICEIEV 2027 (Economics of Innovation)",
     "type": "Conference",
     "location": "Online / California, USA",
     "coordinates": [
       0,
       0
     ],
-    "eventDateStart": "2026-06-13",
-    "eventDateEnd": "2026-06-14",
-    "deadline": "2026-03-01",
+    "eventDateStart": "2027-06-13",
+    "eventDateEnd": "2027-06-14",
+    "deadline": "2027-03-01",
     "description": "International Conference on Economics of Innovation and Entrepreneurial Ventures.",
     "website": "#",
     "topics": [
@@ -1253,16 +1374,16 @@
   },
   {
     "id": "70",
-    "name": "Joseph A. Schumpeter Society Conference (ISS 2026)",
+    "name": "Joseph A. Schumpeter Society Conference (ISS 2027)",
     "type": "Conference",
     "location": "Strasbourg, France",
     "coordinates": [
       48.5734,
       7.7521
     ],
-    "eventDateStart": "2026-07-01",
-    "eventDateEnd": "2026-07-04",
-    "deadline": "2026-02-15",
+    "eventDateStart": "2027-07-01",
+    "eventDateEnd": "2027-07-04",
+    "deadline": "2027-02-15",
     "description": "Theme: Capitalism and Democracy: Paradigm Shifts and Creative Transformations.",
     "website": "https://iss2026.sciencesconf.org/",
     "topics": [
@@ -1273,16 +1394,16 @@
   },
   {
     "id": "71",
-    "name": "Bordeaux Workshop on the Economics of Science and Innovation 2026",
+    "name": "Bordeaux Workshop on the Economics of Science and Innovation 2027",
     "type": "Workshop",
     "location": "Pessac (Bordeaux), France",
     "coordinates": [
       44.8062,
       -0.6311
     ],
-    "eventDateStart": "2026-07-15",
-    "eventDateEnd": "2026-07-16",
-    "deadline": "2026-06-21",
+    "eventDateStart": "2027-07-15",
+    "eventDateEnd": "2027-07-16",
+    "deadline": "2027-06-21",
     "description": "Focuses on the organization of scientific research, digitalization, AI, and job market for scientists.",
     "website": "https://www.bse.u-bordeaux.fr/",
     "topics": [
@@ -1339,9 +1460,9 @@
       43.7696,
       11.2558
     ],
-    "eventDateStart": "2026-06-24",
-    "eventDateEnd": "2026-06-26",
-    "deadline": "2026-03-01",
+    "eventDateStart": "2027-06-24",
+    "eventDateEnd": "2027-06-26",
+    "deadline": "2027-03-01",
     "description": "Regioni tra innovazione e sostenibilità: le sfide per le politiche di sviluppo (Associazione Italiana di Scienze Regionali)",
     "website": "#",
     "topics": [
