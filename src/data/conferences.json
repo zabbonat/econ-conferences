@@ -1219,16 +1219,16 @@
   },
   {
     "id": "62",
-    "name": "LSE Summer School in Economics 2026",
+    "name": "LSE Summer School in Economics 2027",
     "type": "Summer School",
     "location": "London, UK",
     "coordinates": [
       51.5144,
       -0.1166
     ],
-    "eventDateStart": "2026-07-20",
-    "eventDateEnd": "2026-08-07",
-    "deadline": "2026-04-30",
+    "eventDateStart": "2027-07-20",
+    "eventDateEnd": "2027-08-07",
+    "deadline": "2027-04-30",
     "description": "London School of Economics Summer School",
     "website": "https://www.lse.ac.uk/study-at-lse/summer-schools",
     "topics": [
