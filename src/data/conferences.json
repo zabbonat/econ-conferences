@@ -310,16 +310,16 @@
   },
   {
     "id": "11",
-    "name": "EEA-ESEM 2026",
+    "name": "EEA-ESEM 2027",
     "type": "Conference",
     "location": "Barcelona, Spain",
     "coordinates": [
       41.3851,
       2.1734
     ],
-    "eventDateStart": "2026-08-24",
-    "eventDateEnd": "2026-08-28",
-    "deadline": "2026-02-15",
+    "eventDateStart": "2027-08-24",
+    "eventDateEnd": "2027-08-28",
+    "deadline": "2027-02-15",
     "description": "Econometrics / micro / macro",
     "website": "https://www.eeassoc.org",
     "topics": [
