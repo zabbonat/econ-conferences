@@ -8,9 +8,9 @@
       37.4275,
       -122.1697
     ],
-    "eventDateStart": "2026-07-20",
-    "eventDateEnd": "2026-09-11",
-    "deadline": "2026-05-01",
+    "eventDateStart": "2027-07-20",
+    "eventDateEnd": "2027-09-11",
+    "deadline": "2027-05-01",
     "description": "Summer workshops covering economic theory, empirical work, and mathematical economics",
     "website": "https://economics.stanford.edu/",
     "topics": [
@@ -48,9 +48,9 @@
       40.4644,
       17.247
     ],
-    "eventDateStart": "2026-09-07",
-    "eventDateEnd": "2026-09-11",
-    "deadline": "2026-06-30",
+    "eventDateStart": "2027-09-07",
+    "eventDateEnd": "2027-09-11",
+    "deadline": "2027-06-30",
     "description": "Data Analytics for Innovation and SustainabilitY",
     "website": "#",
     "topics": [
@@ -1161,16 +1161,16 @@
   },
   {
     "id": "59",
-    "name": "EPIP Conference 2026",
+    "name": "EPIP Conference 2027",
     "type": "Conference",
     "location": "TBD",
     "coordinates": [
       48.8566,
       2.3522
     ],
-    "eventDateStart": "2026-09-09",
-    "eventDateEnd": "2026-09-11",
-    "deadline": "2026-04-15",
+    "eventDateStart": "2027-09-09",
+    "eventDateEnd": "2027-09-11",
+    "deadline": "2027-04-15",
     "description": "European Policy for Intellectual Property",
     "website": "https://epip.eu",
     "topics": [
@@ -1433,16 +1433,16 @@
   },
   {
     "id": "73",
-    "name": "38th EAEPE Annual Conference 2026",
+    "name": "38th EAEPE Annual Conference 2027",
     "type": "Conference",
     "location": "Lausanne, Switzerland",
     "coordinates": [
       46.5197,
       6.6323
     ],
-    "eventDateStart": "2026-09-09",
-    "eventDateEnd": "2026-09-11",
-    "deadline": "2026-04-01",
+    "eventDateStart": "2027-09-09",
+    "eventDateEnd": "2027-09-11",
+    "deadline": "2027-04-01",
     "description": "Theme: Global Transformations of Labour. Pre-conference for young scholars on Sep 8.",
     "website": "#",
     "topics": [
