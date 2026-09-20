@@ -330,16 +330,16 @@
   },
   {
     "id": "12",
-    "name": "EALE Conference 2026",
+    "name": "EALE Conference 2027",
     "type": "Conference",
     "location": "Berlin, Germany",
     "coordinates": [
       52.52,
       13.405
     ],
-    "eventDateStart": "2026-09-17",
-    "eventDateEnd": "2026-09-19",
-    "deadline": "2026-03-31",
+    "eventDateStart": "2027-09-17",
+    "eventDateEnd": "2027-09-19",
+    "deadline": "2027-03-31",
     "description": "Labor economics",
     "website": "https://www.eale.nl",
     "topics": [
@@ -348,16 +348,16 @@
   },
   {
     "id": "13",
-    "name": "Verein für Socialpolitik Annual Conference 2026",
+    "name": "Verein für Socialpolitik Annual Conference 2027",
     "type": "Conference",
     "location": "Vienna, Austria",
     "coordinates": [
       48.2082,
       16.3738
     ],
-    "eventDateStart": "2026-09-13",
-    "eventDateEnd": "2026-09-16",
-    "deadline": "2026-03-01",
+    "eventDateStart": "2027-09-13",
+    "eventDateEnd": "2027-09-16",
+    "deadline": "2027-03-01",
     "description": "General economics",
     "website": "https://www.socialpolitik.de",
     "topics": [
