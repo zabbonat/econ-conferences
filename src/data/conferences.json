@@ -384,16 +384,16 @@
   },
   {
     "id": "15",
-    "name": "2026 Advances with Field Experiments (AFE)",
+    "name": "2027 Advances with Field Experiments (AFE)",
     "type": "Conference",
     "location": "Chicago, IL, USA",
     "coordinates": [
       41.8781,
       -87.6298
     ],
-    "eventDateStart": "2026-09-24",
-    "eventDateEnd": "2026-09-25",
-    "deadline": "2026-05-15",
+    "eventDateStart": "2027-09-24",
+    "eventDateEnd": "2027-09-25",
+    "deadline": "2027-05-15",
     "description": "Experimental / field econ",
     "website": "#",
     "topics": [
