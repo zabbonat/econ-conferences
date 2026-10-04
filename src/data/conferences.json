@@ -1297,16 +1297,16 @@
   },
   {
     "id": "66",
-    "name": "Competition and Innovation Summer School (CISS) 2026",
+    "name": "Competition and Innovation Summer School (CISS) 2027",
     "type": "Summer School",
     "location": "Ulcinj, Montenegro",
     "coordinates": [
       41.9294,
       19.2078
     ],
-    "eventDateStart": "2026-09-28",
-    "eventDateEnd": "2026-10-02",
-    "deadline": "2026-05-15",
+    "eventDateStart": "2027-09-28",
+    "eventDateEnd": "2027-10-02",
+    "deadline": "2027-05-15",
     "description": "Focuses on innovation and competition economics for young researchers.",
     "website": "http://www.euro-ciss.eu",
     "topics": [
