@@ -373,9 +373,9 @@
       39.2238,
       9.1128
     ],
-    "eventDateStart": "2026-10-22",
-    "eventDateEnd": "2026-10-24",
-    "deadline": "2026-05-31",
+    "eventDateStart": "2027-10-22",
+    "eventDateEnd": "2027-10-24",
+    "deadline": "2027-05-31",
     "description": "General economics",
     "website": "https://www.siecon.org/it/eventi/67a-rsa-universita-di-cagliari",
     "topics": [
@@ -1335,16 +1335,16 @@
   },
   {
     "id": "68",
-    "name": "Innovation Economics, Policy and Entrepreneurship 2026",
+    "name": "Innovation Economics, Policy and Entrepreneurship 2027",
     "type": "Conference",
     "location": "Online / Belgrade, Serbia",
     "coordinates": [
       0,
       0
     ],
-    "eventDateStart": "2026-10-20",
-    "eventDateEnd": "2026-10-21",
-    "deadline": "2026-06-01",
+    "eventDateStart": "2027-10-20",
+    "eventDateEnd": "2027-10-21",
+    "deadline": "2027-06-01",
     "description": "Brings together scholars, policymakers, and practitioners to discuss intersections in innovation economics.",
     "website": "#",
     "topics": [
